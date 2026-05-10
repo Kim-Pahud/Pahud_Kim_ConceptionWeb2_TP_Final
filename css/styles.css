@@ -1,0 +1,290 @@
+/************* GÉNÉRAL *************/
+
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+
+/************* ELEMENTS *************/
+
+/**--------- BASE ---------**/
+
+body {
+    margin: 0px;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1319px;
+}
+
+
+/**--------- MISE EN PAGE ---------**/
+
+h1 {
+    font: bold 3.125rem "Encode Sans", sans-serif;
+    letter-spacing: 5%;
+    margin: 0px;
+}
+
+h2 {
+    font: bold 2.25rem "Work Sans", sans-serif;
+    letter-spacing: 3%;
+    margin: 0px;
+}
+
+h3 {
+    font: 600 1.75rem "Work Sans", sans-serif;
+    margin: 0px;
+}
+
+h4 {
+    font: bold 2.5rem "Encode Sans", sans-serif;
+    letter-spacing: 5%;
+    margin: 0px;
+}
+
+h5 {
+    font: bold 1.5rem "Work Sans", sans-serif;
+    margin: 0px;
+}
+
+p {
+    font: normal 1.25rem "Work Sans", sans-serif;
+    margin: 0px;
+}
+
+.p2 {
+    font: italic lighter 1.25rem "Work Sans", sans-serif;
+    margin: 0px;
+}
+
+.p3 {
+    font: 600 1.5rem "Work Sans", sans-serif;
+    margin: 0px !important;
+}
+
+.p4 {
+    font: 600 1.125rem "Work Sans", sans-serif;
+    margin: 0px;
+}
+
+.BTstyle1 {
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    outline: none;
+    padding: 20px 30px;
+    background-color: #A11E16;
+    color: white;
+}
+
+.BTstyle2 {
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    outline: none;
+    padding: 15px 40px;
+    background-color: #A11E16;
+    box-shadow: inset 0 0 0 1px white;
+    color: white;
+}
+
+.BTstyle3 {
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    outline: none;
+    padding: 5px 10px;
+    background-color: #A11E16;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/************* COMPONENTS *************/
+
+
+/**--------- COMPONENTS COMMUNS ---------**/
+
+/**---------header----------**/
+
+header {
+    background-color: black;
+}
+
+header nav {
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+header ul {
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    gap: 37px
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav p {
+    text-transform: uppercase;
+}
+
+/**---------footer----------**/
+
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 124px;
+}
+
+/**--------- PAGE ACCEUIL----------**/
+
+/**---------hero----------**/
+
+.Ahero {
+    background: url(../images/HERO.png) center/cover no-repeat;
+}
+
+.Ahero .wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 1080px;
+}
+
+.HinfoBox {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    color: white;
+    padding: 30px;
+    max-width: 560px;
+}
+
+/**---------section à propos----------**/
+
+
+.àpropos {
+    background-color: #F8F4F4;
+    min-height: 334px;
+    text-align: center;
+}
+
+.àpropos h1 {
+    padding-top: 50px;
+}
+
+.àpropos p {
+    margin: 22px 0;
+}
+
+.àpropos button {
+    margin-bottom: 50px;
+}
+
+/**---------section team----------**/
+
+
+.team {
+    text-align: center;
+    background-color: white;
+}
+
+.team h1 {
+    margin: 50px 0 11px;
+}
+
+.team h3 {
+    margin-top: 32px;
+}
+
+.team .wrapper>p:first-of-type {
+    margin-bottom: 59px;
+}
+
+.TeamCardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 85px;
+    margin-bottom: 50px;
+}
+
+.teamImageContainer {
+    background:
+        url(../images/Produit1.png) center no-repeat,
+        radial-gradient(circle at center,
+            rgba(255, 255, 255, 0.25) 0%,
+            rgba(0, 0, 0, 0.85) 40%);
+    border-radius: 100vw;
+    padding: 0px;
+    cursor: pointer;
+    width: 363px;
+    height: 363px;
+
+}
+
+.Acardteam {
+    background-color: #F8F4F4;
+    box-shadow: inset 0 0 0 1px #A11E16;
+    padding: 20px 10px;
+    border-radius: 20px;
+}
+
+/**---------section produits----------**/
+
+
+
+/**---------section localisation----------**/
+
+
+.mapBigBox {
+    text-align: center;
+    background-color: #A11E16;
+    color: white;
+}
+
+.maptext {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mapTextBox {
+    background-color: white;
+    color: black;
+    text-align: left;
+    max-height: 623px;
+}
