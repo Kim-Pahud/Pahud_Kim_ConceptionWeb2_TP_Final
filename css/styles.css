@@ -63,7 +63,7 @@ p {
 }
 
 .p2 {
-    font: italic lighter 1.25rem "Work Sans", sans-serif;
+    font: italic lighter 1.25rem/23.5px "Work Sans", sans-serif;
     margin: 0px;
 }
 
@@ -83,7 +83,7 @@ p {
     margin: 0;
     cursor: pointer;
     outline: none;
-    padding: 20px 30px;
+    padding: 10px 30px;
     background-color: #A11E16;
     color: white;
 }
@@ -111,6 +111,20 @@ p {
     color: white;
 }
 
+.hvr-underline-from-center:hover:before {
+    background: white;
+    height: 1px;
+    bottom: 10px;
+    left: 10%;
+    right: 10%;
+}
+
+.hvr-underline-from-center::before {
+    background: white;
+    height: 1px;
+    bottom: 10px;
+}
+
 a {
     color: white;
     text-decoration: none;
@@ -127,6 +141,9 @@ a {
 
 header {
     background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 header nav {
@@ -135,15 +152,29 @@ header nav {
     justify-content: center;
 }
 
+header .hvr-underline-from-center::before {
+    background: white;
+    height: 1px;
+    bottom: 0px;
+}
+
+header .hvr-underline-from-center:hover::before {
+    background: white;
+    height: 1px;
+    bottom: 0px;
+    left: 0%;
+    right: 0%;
+}
+
 header ul {
-    margin: 0px;
-    display: flex;
-    align-items: center;
     gap: 37px
 }
 
 nav ul {
     list-style: none;
+    margin: 0px;
+    display: flex;
+    align-items: center;
 }
 
 nav a {
@@ -168,6 +199,13 @@ footer .wrapper {
     justify-content: space-between;
     align-items: center;
     min-height: 124px;
+}
+
+footer .material-symbols-outlined {
+    border-radius: 100%;
+    font-weight: 100;
+    font-size: 2rem;
+    border: 3px white solid;
 }
 
 /**--------- PAGE ACCEUIL----------**/
@@ -207,7 +245,8 @@ footer .wrapper {
 }
 
 .àpropos p {
-    margin: 22px 0;
+    max-width: 633px;
+    margin: 22px auto;
 }
 
 .àpropos button {
@@ -245,41 +284,117 @@ footer .wrapper {
 .teamImageContainer {
     background:
         url(../images/Produit1.png) center no-repeat,
-        radial-gradient(circle at center,
-            rgba(255, 255, 255, 0.25) 0%,
-            rgba(0, 0, 0, 0.85) 40%);
+        radial-gradient(56.12% 56.12% at 50% 50%, #616161 0%, #000 100%);
     border-radius: 100vw;
     padding: 0px;
     cursor: pointer;
-    width: 363px;
-    height: 363px;
+    width: 303px;
+    height: 303px;
 
 }
 
 .Acardteam {
     background-color: #F8F4F4;
-    box-shadow: inset 0 0 0 1px #A11E16;
-    padding: 20px 10px;
+    box-shadow: inset 0 0 0 2px #A11E16;
+    padding: 40px 10px;
     border-radius: 20px;
+    min-width: 363px;
 }
 
 /**---------section produits----------**/
 
 
+.Aproduits {
+    text-align: center;
+    background-color: #F8F4F4;
+}
+
+.Aproduits h1 {
+    padding-top: 50px;
+}
+
+.Aproduits h5 {
+    margin: 20px 0 0 0;
+}
+
+.Aproduits .wrapper>p:first-of-type {
+    max-width: 562px;
+    margin: 10px auto 23px;
+}
+
+.Aproduits .wrapper {
+    padding-bottom: 50px;
+}
+
+.Aproduits ul {
+    gap: 50px;
+}
+
+.Aproduits nav p {
+    text-transform: capitalize;
+}
+
+.Aarticlecontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 40px;
+    column-gap: 69px;
+    margin: 38px 0px;
+}
+
+.hvr-bounce-in:hover {
+    transform: scale(1.1);
+}
+
+.Acardproduit {
+    background-color: white;
+    border-radius: 20px;
+    border: #A11E16 2px solid;
+    max-width: 275px;
+}
+
+.AtextCard {
+    color: black;
+}
+
+.Acardproduit p {
+    margin-bottom: 5px;
+}
+
+.Acardimage {
+    min-height: 275px;
+    background: radial-gradient(56.12% 56.12% at 50% 50%, #616161 0%, #000 100%);
+    border-radius: 18px 18px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /**---------section localisation----------**/
 
+
+.Alocalisation .material-symbols-outlined {
+    color: #A11E16;
+    font-size: 50px;
+}
 
 .mapBigBox {
     text-align: center;
     background-color: #A11E16;
     color: white;
+    margin: 50px 0px;
+    border-radius: 20px;
+    padding: 50px;
 }
 
-.maptext {
+.mapettext {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 75px;
+    margin: 30px 0px;
+
 }
 
 .mapTextBox {
@@ -287,4 +402,20 @@ footer .wrapper {
     color: black;
     text-align: left;
     max-height: 623px;
+    border: 2px black solid;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.mapTextBox>h3:first-of-type {
+    margin: 20px 0px;
+}
+
+.mapTextBox ul {
+    padding: 0px;
+    margin-top: 20px;
+}
+
+.mapTextBox li {
+    max-height: 50px;
 }
