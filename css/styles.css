@@ -351,6 +351,7 @@ footer .material-symbols-outlined {
     border-radius: 20px;
     border: #A11E16 2px solid;
     max-width: 275px;
+    min-width: 275px;
 }
 
 .Pcardproduit p {
@@ -427,16 +428,17 @@ footer .material-symbols-outlined {
 
 .LAhero {
     text-align: center;
-    margin: 50px auto;
+    background-color: #F8F4F4;
 }
 
-.resizer {
+.LAresizer {
     display: flex;
     justify-content: flex-start;
 }
 
 .LAhero h1{
     text-align: start;
+    padding: 30px 0px;
 }
 
 .LAhero .wrapper a {
@@ -444,16 +446,17 @@ footer .material-symbols-outlined {
     justify-content: flex-start;
 }
 
-.LAContainer {
+.LAHContainer {
     display: flex;
     justify-content: flex-start;
     background-color: #F8F4F4;
     border-radius: 20px;
     border: #A11E16 2px solid;
+    margin-bottom: 50px;
 }
 
 .Hcardproduit {
-    min-height: 275px;
+    min-height: 325px;
     background: radial-gradient(56.12% 56.12% at 50% 50%, #616161 0%, #000 100%);
     border-radius: 18px 0px 0px 18px;
     display: flex;
@@ -462,17 +465,20 @@ footer .material-symbols-outlined {
     aspect-ratio: 1 / 1;
 }
 
+.Hcardproduit img{
+    transform: scale(1.4);
+}
+
 .LAHinfoBox {
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 0px 18px 18px 0px;
     color: white;
-    padding: 30px;
+    padding: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-
 
 
 /**--------- Section Produits liste ----------**/
@@ -482,12 +488,16 @@ footer .material-symbols-outlined {
     background-color: white;
 }
 
+.LAproduits h1{
+    margin: 40px 0px;
+}
+
 .LAarticlecontainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 40px;
     column-gap: 69px;
-    margin: 38px 0px;
+    margin-bottom: 50px;
 }
 
 .LAPtextCard {
