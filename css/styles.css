@@ -346,22 +346,22 @@ footer .material-symbols-outlined {
     transform: scale(1.1);
 }
 
-.Acardproduit {
+.cardproduit {
     background-color: white;
     border-radius: 20px;
     border: #A11E16 2px solid;
     max-width: 275px;
 }
 
-.AtextCard {
-    color: black;
-}
-
-.Acardproduit p {
+.Pcardproduit p {
     margin-bottom: 5px;
 }
 
-.Acardimage {
+.PtextCard {
+    color: black;
+}
+
+.Pcardimage {
     min-height: 275px;
     background: radial-gradient(56.12% 56.12% at 50% 50%, #616161 0%, #000 100%);
     border-radius: 18px 18px 0 0;
@@ -418,4 +418,80 @@ footer .material-symbols-outlined {
 
 .mapTextBox li {
     max-height: 50px;
+}
+
+/**--------- PAGE LISTE DES ARTICLES----------**/
+
+
+/**--------- Section Produits mis en avant ----------**/
+
+.LAhero {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.resizer {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.LAhero h1{
+    text-align: start;
+}
+
+.LAhero .wrapper a {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.LAContainer {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #F8F4F4;
+    border-radius: 20px;
+    border: #A11E16 2px solid;
+}
+
+.Hcardproduit {
+    min-height: 275px;
+    background: radial-gradient(56.12% 56.12% at 50% 50%, #616161 0%, #000 100%);
+    border-radius: 18px 0px 0px 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1 / 1;
+}
+
+.LAHinfoBox {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 0px 18px 18px 0px;
+    color: white;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+/**--------- Section Produits liste ----------**/
+
+.LAproduits {
+    text-align: center;
+    background-color: white;
+}
+
+.LAarticlecontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 40px;
+    column-gap: 69px;
+    margin: 38px 0px;
+}
+
+.LAPtextCard {
+    color: black;
+    background-color: #F8F4F4;
+    border-radius: 0px 0px 18px 18px;
 }
