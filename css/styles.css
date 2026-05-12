@@ -375,9 +375,8 @@ footer .material-symbols-outlined {
 /**---------section localisation----------**/
 
 
-.Alocalisation .material-symbols-outlined {
-    color: #A11E16;
-    font-size: 50px;
+.Alocalisation ul{
+    gap: 30px;
 }
 
 .mapBigBox {
